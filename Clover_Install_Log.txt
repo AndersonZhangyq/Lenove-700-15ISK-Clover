@@ -1,0 +1,37 @@
+
+Clover EFI installer log - Mon Jul  3 16:14:23 CST 2017
+Installer version: v2.4k r4097 EFI bootloader
+======================================================
+/dev/disk0 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *42.9 GB    disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS OS                      42.1 GB    disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+
+/dev/disk1 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     Apple_partition_scheme                        *6.6 GB     disk1
+   1:        Apple_partition_map                         32.3 KB    disk1s1
+   2:                  Apple_HFS macOS S 10.12.5(16F7... 6.6 GB     disk1s2
+
+/dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *15.7 GB    disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                  Apple_HFS Install macOS Sierra    15.4 GB    disk2s2
+
+======================================================
+Backing up EFI files
+
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/Install macOS Sierra
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/Install macOS Sierra
+
+Theme 'metal' (defined in config.plist) not found !
+Using default theme 'embedded'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
