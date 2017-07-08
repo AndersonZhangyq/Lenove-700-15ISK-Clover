@@ -1,0 +1,44 @@
+      <key>Graphics</key>
+	<dict>
+		<key>InjectIntel</key>     ------------从这里开始
+		<true/>                    -----------到这里结束
+	</dict>
+
+【不要复制我：为了方便这里直接写文字了，在你自己的config中，按Ctrl+F搜Graphics找到上面虚线中的键值，将其全部替换为下面给出的虚线内的键值】
+
+		<key>Graphics</key>
+	<dict>
+		<key>Inject</key>     ------------从这里开始
+		<dict>
+			<key>ATI</key>
+			<false/>
+			<key>Intel</key>
+			<true/>
+			<key>NVidia</key>
+			<false/>
+		</dict>
+		<key>NvidiaSingle</key>
+		<false/>
+		<key>ig-platform-id</key>
+		<string>0x19160000</string>    -----------到这里结束
+	</dict>
+
+
+【不要复制我：为了方便这里直接写文字了，搜索KextsToPatch在array下面添加虚线中的键值】
+
+<key>KextsToPatch</key>
+		<array>
+			<dict>                 ----------------------从这里开始
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				QTnEdio=
+				</data>
+				<key>Name</key>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				QTnE6yo=
+				</data>
+			</dict>               ----------------------到这里结束
